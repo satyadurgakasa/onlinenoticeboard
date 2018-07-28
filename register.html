@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION</title>
+	<link rel="stylesheet" type="text/css" href="css/styling.css">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Amarante' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	<style>
+ body{
+  background-image: url("image/bg.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+    font-family: 'Carter One'
+
+}
+</style>
+</head>
+<body>
+	<div class="top">
+		<div class="top">
+		<center><h1 style="color: #fff;margin-top: 10px;font-family: Georgia;padding: 10px;">COLLEGE NOTICE BOARD</h1></center>
+	</div>
+	<img src="image/srkrlogo.png" style="width: 600px;float: left;" >
+		<center>
+		<div class="rblock" style="height: 1100px;">
+			<br><br><br>
+			<a href="NoticeBoard.html" style="margin-left: 0px;font-size: 30px;text-decoration: none;"  >LOGIN</a>
+			<a href="register.html" style="margin-left:60PX;font-size: 40px;" class="active">REGISTER </a>
+			<br><br><br>
+			<form action="insert.php" name="registration" method="post" onSubmit="formValidation">
+				<input type="text" class="txt" name="regno" placeholder="Registration ID"><br><br>
+				<input type="text" class="txt" name="name" placeholder="Name"><br><br>
+				<input type="text" class="txt" name="father" placeholder="Father"><br><br>
+				<div style="font-size: 20px;font-family: 'Acme';color: white;">
+					<h3 style="margin-left: -270px;color: #ffeeee">Gender</h3>
+					<input type="radio" name="gender" class="rdo" value="male" style="margin-left: -180px;" checked> Male
+  					<input type="radio" name="gender" class="rdo" value="female"> Female<br>
+  					<h3 style="margin-left: -230px;color: #ffeeee">Date of Birth</h3>
+  					<input type="date" class="txt" name="dob" placeholder="Date of Birth"><br><br>
+				</div>  				
+				<select name="year" class="dbox">
+					<option>--select year--</option>
+				  <option value="1">FIRST</option>
+				  <option value="2">SECOND</option>
+				  <option value="3">THIRD</option>
+				  <option value="4">FOURTH</option>
+				</select>
+				<select name="branch" class="dbox">
+					<option>--select branch--</option>
+				  <option value="CSE">CSE</option>
+				  <option value="ECE">ECE</option>
+				  <option value="EEE">EEE</option>
+				  <option value="CIVIL">CIVIL</option>
+				  <option value="MECH">MECH</option>
+				  <option value="IT">IT</option>
+				</select>
+				<br><br>
+				<input type="email" class="txt" name="email" placeholder="E-mail"><br><br>
+				<input type="text" class="txt" name="mobile" placeholder="Mobile"><br><br>
+				<input type="text" class="txt" name="address" placeholder="Addess"><br><br>
+				<br><br>
+				<input type="password" class="txt" name="password" placeholder="Create Password"><br><br>
+				<input type="submit" class="rbtn" name="btnLog" value="REGISTER"><br><br><br>
+			</form><br>
+		</div>
+	</center>
+		<footer class="foot">
+		
+	</footer>
+
+
+<script src="validation.js"></script>
+</body>
+</html>

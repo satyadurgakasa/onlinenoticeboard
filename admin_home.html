@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Post Notice</title>
+	<link rel="stylesheet" type="text/css" href="css/admin_styling.css">
+	<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Averia Gruesa Libre' rel='stylesheet'>
+	<style type="text/css">
+	body{
+    background-image: url("image/bg1.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     color: #fff0f5;
+     font-family: 'Averia Gruesa Libre';
+
+}
+		.lists{
+			 font-family: 'Aclonica';
+			 font-size: 15px;
+			 line-height: 2;
+			 color: blue;
+		}
+		.listing{
+			color: none;
+			padding-left: 10px;
+		}
+		.listing:hover{
+			background-color: #eeeeee;
+			font-size: 17px;
+			transition: 0.3s;
+		}
+		.sidediv{
+			width: 220px;
+			height: 700px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			top:70;
+			border: 1px solid black;
+			background-color: white;
+		}
+		.topdiv{
+			height: 60px;
+			position: fixed;
+			top:0;
+			left: 0;
+			right: 0;
+			color: #f0fff0;
+		}
+		.btnsub{
+			float: right;
+			height: 40px;
+			width: 100px;
+			border-radius: 5px;
+			background-color: #008000;
+			color: white;
+			font-family: 'Averia Gruesa Libre';
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.btnsub:hover{
+			background-color: #005000;
+		}
+	</style>
+</head>
+<body>
+	<div class="topdiv">
+		<center><h1>NOTICE BOARD</h1></center>
+	</div>
+	<div class="sidediv">
+		<ul class="lists" style="list-style-type:none;">
+		  <li class="listing" style="background-color: blue;"><a href="admin_home.html" style="text-decoration: none;color: white;">Post a Notice</a></li>
+		  <li class="listing"><a href="view_posts.html" style="text-decoration: none;">Manage Posts</a></li>
+		  <li class="listing"><a href="manage_users.php" style="text-decoration: none;">Manage Users</a></li>
+		  <li class="listing"><a href="update_changes.html" style="text-decoration: none;">Upadte Profile</a></li>
+		</ul>
+	</div>
+	
+		<div style="float: right;width: 500px;height: auto; margin-right: 470px;margin-top: 70px;">
+			<br><br>
+			<form>
+			<textarea name="Text1" cols="70" rows="7" placeholder="Enter Text (maximum 200 word)"></textarea><br><br>
+			<h3>Post Image :</h3>
+			<input type="file" name="image" class="uploadfile" /><br><br>
+			<h3>Post pdf file :</h3>
+			<input type="file" name="image" class="uploadfile" /><br><br><br>
+			<input type="submit" name="submit" value="POST" class="btnsub"><br><br>
+			</form>
+		</div>
+	
+</body>
+</html>
